@@ -7,11 +7,15 @@ import { CountdownTimerControllerComponent } from '../countdown-timer-controller
   styleUrls: ['./countdown-timer-logs.component.css']
 })
 export class CountdownTimerLogsComponent implements OnInit {
+   paused : number;
+   started : number;
 
-  private paused : number;
-  private started : number;
+  controller = new CountdownTimerControllerComponent();
 
   constructor() {
+
+    this.paused = this.controller.pausedValue;
+    this.started = this.controller.startedValue;
    }
 
   ngOnInit(): void {

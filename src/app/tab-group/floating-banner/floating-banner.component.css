@@ -1,0 +1,27 @@
+.outer {
+  border:solid black 3px;
+  margin: 15px;
+}
+
+.inner1 {
+  border:solid black 3px;
+  margin: 15px;
+}
+.inner2{
+  border:solid black 3px;
+  margin: 15px;
+}
+.inner3{
+  border:solid black 3px;
+  margin: 15px;
+}
+.inner4{
+  border:solid black 3px;
+  margin: 15px;
+}
+.main{
+  border:solid black 3px;
+  margin: 15px;
+  text-align: center;
+  animation: rotateWord 18s linear infinite 0s infinite;
+}

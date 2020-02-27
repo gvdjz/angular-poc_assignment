@@ -1,11 +1,11 @@
 <mat-tab-group>
-  <mat-tab label="Countdown Timer"><ng-template matTabContent>
+  <mat-tab label="Countdown Timer" class="countdown"><ng-template matTabContent>
     <app-countdown-timer-display></app-countdown-timer-display>
     <app-countdown-timer-controller></app-countdown-timer-controller>
     <app-countdown-timer-logs></app-countdown-timer-logs>
     <app-countdown-timer-activity></app-countdown-timer-activity>
   </ng-template>
 </mat-tab>
-  <mat-tab label="Floating Text Banner"> Floating Text Banner </mat-tab>
-  <mat-tab label="Product list"> Product list </mat-tab>
+  <mat-tab label="Floating Text Banner"><app-floating-banner></app-floating-banner></mat-tab>
+  <mat-tab label="Product list"><app-product-list></app-product-list></mat-tab>
 </mat-tab-group>

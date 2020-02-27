@@ -11,11 +11,12 @@ export class CountdownTimerControllerComponent implements OnInit {
   constructor() { }
 
   toggleButton : boolean = false;
-  config: any;
+  public config: any;
   time: number;
   public paused: number = 0;
   public started: number = 0;
   pausedTimes: any[]=[] ;
+  date :number;
 
   setTime(time){
     this.time = time;
@@ -31,13 +32,17 @@ export class CountdownTimerControllerComponent implements OnInit {
       this.toggleButton=true;
       this.paused++;
       this.pausedTimes.push(this.countdown.i.text);
+      this.date=Date.now();
       console.log(this.pausedTimes);
       console.log(this.paused);
+      console.log(this.date);
     }
     else{
     this.countdown.resume();
     this.toggleButton=false;
     this.started++;
+    this.date=Date.now();
+    console.log(this.date)
     }
 
   }
@@ -48,6 +53,10 @@ export class CountdownTimerControllerComponent implements OnInit {
 
   public get startedValue(){
     return this.started;
+  }
+
+  public get getConfig(){
+    return this.config;
   }
 
   ngOnInit(): void {
