@@ -1,0 +1,5 @@
+<p>countdown-timer-controller works!</p>
+<input type="number" (change)="setTime($event.target.value)"/>
+<countdown #countdown [config]="config"></countdown>
+<button (click)="onToggleButton()" class="btn btn-link btn-sm">pause/resume</button>
+<button (click)="countdown.restart()" class="btn btn-link btn-sm">reset</button>
