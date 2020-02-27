@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CountdownTimerControllerComponent } from '../countdown-timer-controller/countdown-timer-controller.component';
 
 @Component({
   selector: 'app-countdown-timer-logs',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountdownTimerLogsComponent implements OnInit {
 
-  constructor() { }
+  private paused : number;
+  private started : number;
+
+  constructor() {
+   }
 
   ngOnInit(): void {
   }

@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+mat-tab {
+  display: flex;
+}
+
+.cdController .cdDisplay .cdActivity .cdLogs{
+  border: solid #000 2px;
+  padding: 10px;
+}

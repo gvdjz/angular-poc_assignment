@@ -1,0 +1,10 @@
+.cdController {
+  border: solid #000 2px;
+  padding: 10px;
+  margin: 5px 0;
+  width: 45%;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  top: -17px;
+}

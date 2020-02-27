@@ -1,0 +1,17 @@
+.cdLogs{
+  display: inline-block;
+    width: 45%;
+    float: right;
+}
+
+.started {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+}
+
+.paused {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+}

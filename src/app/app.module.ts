@@ -14,7 +14,6 @@ import { FloatingBannerComponent } from './tab-group/floating-banner/floating-ba
 import { ProductListComponent } from './tab-group/product-list/product-list.component';
 import { CountdownModule } from 'ngx-countdown';
 
-
 @NgModule({
   declarations: [
     AppComponent,

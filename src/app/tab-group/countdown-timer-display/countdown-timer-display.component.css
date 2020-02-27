@@ -1,0 +1,22 @@
+.cdDisplay {
+  border: solid #000 2px;
+  padding: 10px;
+  margin: 5px 5px;
+  width: 45%;
+  height: 200px;
+  position: relative;
+  display: inline-block;
+}
+
+h3 {
+  position: absolute;
+  left: 28%;
+  top: -16px;
+}
+
+.timerDisplay {
+  position: inherit;
+  left: 37%;
+  top: 10px;
+}
+

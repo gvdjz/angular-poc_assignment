@@ -1,5 +1,11 @@
-<p>countdown-timer-controller works!</p>
-<input type="number" (change)="setTime($event.target.value)"/>
-<countdown #countdown [config]="config"></countdown>
-<button (click)="onToggleButton()" class="btn btn-link btn-sm">pause/resume</button>
-<button (click)="countdown.restart()" class="btn btn-link btn-sm">reset</button>
+<div class="cdController">
+Enter Timer Limit <input type="number" (change)="setTime($event.target.value)"/>
+<countdown #countdown [config]="config" style="display:none"></countdown><br>
+<button (click)="onToggleButton()" class="btn btn-link btn-sm">Start/Pause</button>
+<button (click)="countdown.restart()" class="btn btn-link btn-sm">Reset</button>
+<div class="paused">
+    <ul>
+      <li *ngFor="let pausedTime of pausedTimes">paused at {{pausedTime}}</li>
+    </ul>
+</div>
+</div>
